@@ -1,0 +1,131 @@
+#-------------------------------
+# General Site Settings
+baseURL = "https://blog.hecmisio.com"
+languageCode = "zh-cn"
+title = "HecMisio's Blog"
+googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
+paginate = 9
+
+
+#-------------------------------
+# Main Menu
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "elements"
+    name = "Elements"
+    url = "/elements"
+    weight = 4
+
+
+[params]
+  logo = "/images/logo.svg" # You can add own logo. For example "/images/logo.png".
+  description = "HecMisio"
+
+  #-------------------------------
+  # Author Settings
+  [params.author]
+    author__name = "HecMisio"
+    author__bio = "A software engineer. Talks and writes about development, economy, travel and so on."
+    author__avatar = "/images/avatar.jpg"
+
+  [[params.social]]
+    icon = "ion-logo-twitter"
+    name = "Twitter"
+    link = "https://twitter.com"
+
+  [[params.social]]
+    icon = "ion-logo-facebook"
+    name = "Facebook"
+    link = "https://facebook.com"
+
+  [[params.social]]
+    icon = "ion-logo-instagram"
+    name = "Instagram"
+    link = "https://instagram.com"
+
+  [[params.social]]
+    icon = "ion-logo-pinterest"
+    name = "Pinterest"
+    link = "https://pinterest.com"
+
+  [[params.social]]
+    icon = "ion-logo-youtube"
+    name = "Youtube"
+    link = "https://youtube.com"
+
+  #-------------------------------
+  # Hero Settings
+  [params.hero]
+    hero__title = "Hey, I’m HecMisio"
+    hero__description = "A software engineer. Talks and writes about development, economy, travel and so on."
+    hero__image = "/images/hero.jpg"
+
+  # Newsletter
+  # [params.mailchimp]
+  #   mailchimp__identifier = "frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3" # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
+  #   mailchimp__input__text = "Subscribe here"
+  #   mailchimp__button__text = "Subscribe"
+
+
+  #-------------------------------
+  # Gallery Footer Section
+  # [params.gallery]
+  #   gallery__title = "Gallery"
+  #   gallery__columns = 3 # You can change the number of gallery columns
+
+  # [[params.gallery_image]]
+  #   image_alt = "Rest"
+  #   image_url = "https://via.placeholder.com/800x600"
+
+  # [[params.gallery_image]]
+  #   image_alt = "Lifestyle"
+  #   image_url = "https://via.placeholder.com/800x600"
+
+
+
+  #-------------------------------
+  # Contact Settings
+  [params.contact]
+    email = "hecmisio@foxmail.com" # Add your email for contant form
+
+    # NOTE
+    # Menca comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
+
+  #-------------------------------
+  # Comment Section (Disqus)
+  [params.disqus]
+    disqusShortname = "HecMisio" # Add your shortname for Disqus Comment. For example demo-menca
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  noClasses = false
