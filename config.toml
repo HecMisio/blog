@@ -4,7 +4,18 @@ baseURL = "https://blog.hecmisio.com"
 languageCode = "zh-cn"
 title = "HecMisio's Blog"
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
-paginate = 9
+
+
+#-------------------------------
+# Pagination settings:
+
+# For Hugo versions 0.128.0 and above, use the following settings:
+# This will set the number of items per page for newer versions.
+[pagination]
+  pagerSize = 9
+
+# For Hugo versions below 0.128.0, uncomment the line below and comment out the [pagination] block above:
+#paginate = 9 # Sets the number of items per page for older versions.
 
 
 #-------------------------------
@@ -57,11 +68,6 @@ paginate = 9
     link = "https://facebook.com"
 
   [[params.social]]
-    icon = "ion-logo-instagram"
-    name = "Instagram"
-    link = "https://instagram.com"
-
-  [[params.social]]
     icon = "ion-logo-pinterest"
     name = "Pinterest"
     link = "https://pinterest.com"
@@ -70,6 +76,15 @@ paginate = 9
     icon = "ion-logo-youtube"
     name = "Youtube"
     link = "https://youtube.com"
+
+  # Example of adding a new link to the author section and footer:
+  # [[params.social]]
+  #   icon = "ion-logo-vimeo"
+  #   name = "Vimeo"
+  #   link = "https://vimeo.com"
+
+  # Other icons can be found at https://ionicons.com/v4/
+
 
   #-------------------------------
   # Hero Settings
@@ -103,16 +118,16 @@ paginate = 9
 
   #-------------------------------
   # Contact Settings
-  [params.contact]
-    email = "hecmisio@foxmail.com" # Add your email for contant form
+  #[params.contact]
+  #  email = "misiohec@gmail.com" # Add your email for contant form
 
     # NOTE
     # Menca comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
 
   #-------------------------------
   # Comment Section (Disqus)
-  [params.disqus]
-    disqusShortname = "HecMisio" # Add your shortname for Disqus Comment. For example demo-menca
+  #[params.disqus]
+  #  disqusShortname = "HecMisio" # Add your shortname for Disqus Comment. For example demo-menca
 
 
 [markup]

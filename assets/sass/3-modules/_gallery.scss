@@ -11,6 +11,7 @@
   grid-gap: 10px;
 
   .gallery__image {
+    border-radius: 8px;
     background: var(--background-color);
 
     img {
