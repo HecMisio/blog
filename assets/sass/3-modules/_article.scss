@@ -96,6 +96,15 @@
   }
 }
 
+:root h2.article__title {
+  background: linear-gradient(45deg,#00b0ff 11%,#B263FE 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 .article__title {
   margin-bottom: 12px;
   font-size: 24px;

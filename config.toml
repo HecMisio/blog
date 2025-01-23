@@ -3,8 +3,6 @@
 baseURL = "https://blog.hecmisio.com"
 languageCode = "zh-cn"
 title = "HecMisio's Blog"
-googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
-
 
 #-------------------------------
 # Pagination settings:
@@ -13,9 +11,6 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 # This will set the number of items per page for newer versions.
 [pagination]
   pagerSize = 9
-
-# For Hugo versions below 0.128.0, uncomment the line below and comment out the [pagination] block above:
-#paginate = 9 # Sets the number of items per page for older versions.
 
 
 #-------------------------------
@@ -34,9 +29,9 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
     weight = 2
 
   [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact"
+    identifier = "topic"
+    name = "Topic"
+    url = "/topic"
     weight = 3
 
   [[menu.main]]
@@ -54,28 +49,8 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
   # Author Settings
   [params.author]
     author__name = "HecMisio"
-    author__bio = "A software engineer. Talks and writes about development, economy, travel and so on."
+    author__bio = "Here I publish my thoughts on development, economics, psychology, life and so on."
     author__avatar = "/images/avatar.jpg"
-
-  [[params.social]]
-    icon = "ion-logo-twitter"
-    name = "Twitter"
-    link = "https://twitter.com"
-
-  [[params.social]]
-    icon = "ion-logo-facebook"
-    name = "Facebook"
-    link = "https://facebook.com"
-
-  [[params.social]]
-    icon = "ion-logo-pinterest"
-    name = "Pinterest"
-    link = "https://pinterest.com"
-
-  [[params.social]]
-    icon = "ion-logo-youtube"
-    name = "Youtube"
-    link = "https://youtube.com"
 
   # Example of adding a new link to the author section and footer:
   # [[params.social]]
@@ -90,7 +65,8 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
   # Hero Settings
   [params.hero]
     hero__title = "Hey, I’m HecMisio"
-    hero__description = "A software engineer. Talks and writes about development, economy, travel and so on."
+    hero__description = "A software engineer(usually be a gopher)."
+    hero__context = "Here I publish my thoughts on development, economics, psychology, life and so on."
     hero__image = "/images/hero.jpg"
 
   # Newsletter
@@ -144,3 +120,17 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
   codeFences = true
   guessSyntax = true
   noClasses = false
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.x]
+    disable = true
+  [privacy.youtube]
+    disable = true

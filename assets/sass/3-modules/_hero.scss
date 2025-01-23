@@ -52,7 +52,7 @@
   }
 }
 
-.hero__description {
+.hero__description .hero__context {
   margin-bottom: 0;
   font-size: 21px;
   color: var(--text-alt-color);
@@ -174,4 +174,13 @@
   @media only screen and (max-width: $mobile) {
     height: 280px;
   }
+}
+
+h1.hero__title, h1.page__title, h1.post__title {
+  background: linear-gradient(45deg,#00b0ff 11%,#B263FE 44%,#f333f5 66%,#fba1da 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
