@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 baseURL = "https://blog.hecmisio.com"
-languageCode = "zh-cn"
+languageCode = "en-US"
 title = "HecMisio's Blog"
 
 #-------------------------------
@@ -29,15 +29,15 @@ title = "HecMisio's Blog"
     weight = 2
 
   [[menu.main]]
-    identifier = "topic"
-    name = "Topic"
-    url = "/topic"
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags"
     weight = 3
 
   [[menu.main]]
-    identifier = "elements"
-    name = "Elements"
-    url = "/elements"
+    identifier = "vlogs"
+    name = "Vlogs"
+    url = "/vlogs"
     weight = 4
 
 
@@ -134,3 +134,18 @@ title = "HecMisio's Blog"
     disable = true
   [privacy.youtube]
     disable = true
+
+defaultContentLanguage = 'en'
+[languages]
+  [languages.en]
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'en'
+    weight = 1
+  [languages.zh]
+    disabled = false
+    languageCode = 'zh-cn'
+    languageDirection = 'ltr'
+    languageName = 'zh'
+    weight = 2

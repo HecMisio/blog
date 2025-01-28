@@ -250,3 +250,30 @@
     display: none;
   }
 }
+
+.switch-lang {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  user-select: none;
+  cursor: pointer;
+
+  @media only screen and (max-width: $desktop) {
+    padding: 20px 0;
+  }
+}
+
+.lang-switcher {
+  position: absolute;
+  font-size: 20px;
+  transition: color .25s ease;
+  color: var(--heading-font-color);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--brand-color);
+  }
+}

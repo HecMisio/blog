@@ -11,11 +11,12 @@ document.addEventListener("DOMContentLoaded", function() {
     search = document.querySelector(".search"),
     searchBox = document.querySelector(".search__box"),
     toggleTheme = document.querySelector(".toggle-theme"),
-    btnScrollToTop = document.querySelector(".top");
+    btnScrollToTop = document.querySelector(".top"),
+    langSwitch = document.querySelector(".switch-lang");
 
 
   /* =======================================================
-  // Menu + Search + Theme Switcher
+  // Menu + Search + Theme Switcher + Language Switcher
   ======================================================= */
   menuOpenIcon.addEventListener("click", () => {
     menuOpen();
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   };
 
-
+  
   // Theme Switcher
   function darkMode() {
     if (html.classList.contains('dark-mode')) {
@@ -77,6 +78,26 @@ document.addEventListener("DOMContentLoaded", function() {
       document.documentElement.setAttribute("dark", "");
     }
   }
+
+  // Language Switcher
+  langSwitch.addEventListener("click", () => {
+    switchLanguage();
+  });
+
+  function switchLanguage() {
+    const currentPath = window.location.pathname;
+
+    const isChinese = currentPath.startsWith('/zh/');
+
+    let newPath;
+    if (isChinese) {
+        newPath = currentPath.replace(/^\/zh\//, '/');
+    } else {
+        newPath = '/zh' + currentPath;
+    }
+
+    window.location.href = newPath;
+}
 
 
   /* =======================
