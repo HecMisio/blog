@@ -66,7 +66,7 @@ title = "HecMisio's Blog"
   [params.hero]
     hero__title = "Hey, I’m HecMisio"
     hero__description = "A software engineer(usually be a gopher)."
-    hero__context = "Here I publish my thoughts on development, economics, psychology, life and so on."
+    hero__context = "Here I publish my thoughts on IT, economics, psychology, life and so on."
     hero__image = "/images/hero.jpg"
 
   # Newsletter
@@ -173,9 +173,9 @@ defaultContentLanguage = 'en'
     [languages.zh.params.hero]
       hero__title = "你好, 我是 HecMisio"
       hero__description = "一位软件开发工程师（通常是Gopher）"
-      hero__context = "这里是我的博客，分享有关开发，经济学，心理学，生活......的想法"
+      hero__context = "这里是我的博客，分享有关信息技术，经济学，心理学，生活......的想法"
       hero__image = "/images/hero.jpg"
     [languages.zh.params.author]
       author__name = "HecMisio"
-      author__bio = "分享有关开发，经济学，心理学，生活......的想法"
+      author__bio = "分享有关信息技术，经济学，心理学，生活......的想法"
       author__avatar = "/images/avatar.jpg"
