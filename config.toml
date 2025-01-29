@@ -149,3 +149,33 @@ defaultContentLanguage = 'en'
     languageDirection = 'ltr'
     languageName = 'zh'
     weight = 2
+    [languages.zh.menu]
+      [[languages.zh.menu.main]]
+        identifier = "home"
+        name = "首页"
+        url = "/zh"
+        weight = 1
+      [[languages.zh.menu.main]]
+        identifier = "about"
+        name = "关于"
+        url = "/zh/about"
+        weight = 2
+      [[languages.zh.menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/zh/tags"
+        weight = 3
+      [[languages.zh.menu.main]]
+        identifier = "vlogs"
+        name = "Vlogs"
+        url = "/zh/vlogs"
+        weight = 4
+    [languages.zh.params.hero]
+      hero__title = "你好, 我是 HecMisio"
+      hero__description = "一位软件开发工程师（通常是Gopher）"
+      hero__context = "这里是我的博客，分享有关开发，经济学，心理学，生活......的想法"
+      hero__image = "/images/hero.jpg"
+    [languages.zh.params.author]
+      author__name = "HecMisio"
+      author__bio = "分享有关开发，经济学，心理学，生活......的想法"
+      author__avatar = "/images/avatar.jpg"
