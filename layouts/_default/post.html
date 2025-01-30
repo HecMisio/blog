@@ -37,6 +37,10 @@
 
           <h1 class="post__title">{{ .Title }}</h1>
 
+          <div class="post__description-container">
+            <p class="post__description">{{ if .Description }}{{ .Description }}{{ end }}</p>
+          </div>
+
           <div class="post__meta">
             <a href="/about/" class="post__author-image">
               <img class="lazy" data-src="{{ .Site.Params.author.author__avatar }}" alt="{{ .Site.Params.author.author__name }}">
