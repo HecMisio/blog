@@ -49,7 +49,7 @@ title = "HecMisio's Blog"
   # Author Settings
   [params.author]
     author__name = "HecMisio"
-    author__bio = "Here I publish my thoughts on development, economics, psychology, life and so on."
+    author__bio = "Here I publish my thoughts on IT, economics, psychology, life and so on."
     author__avatar = "/images/avatar.jpg"
 
   # Example of adding a new link to the author section and footer:
@@ -65,7 +65,7 @@ title = "HecMisio's Blog"
   # Hero Settings
   [params.hero]
     hero__title = "Hey, I’m HecMisio"
-    hero__description = "A software engineer(usually be a gopher)."
+    hero__description = "A software engineer(usually be a Gopher)."
     hero__context = "Here I publish my thoughts on IT, economics, psychology, life and so on."
     hero__image = "/images/hero.jpg"
 
