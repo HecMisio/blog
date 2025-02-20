@@ -36,7 +36,8 @@ tags: ["Information Security"]
 
 <div align="center">
 
-![Enigma](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Enigma-plugboard.jpg/560px-Enigma-plugboard.jpg)*恩尼格玛密码机*
+![Enigma](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Enigma-plugboard.jpg/560px-Enigma-plugboard.jpg)
+*恩尼格玛密码机*
 
 </div>
 
@@ -44,6 +45,7 @@ tags: ["Information Security"]
 
 <div align="center">
 
-![Turing's Bombe](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Wartime_picture_of_a_Bletchley_Park_Bombe.jpg/440px-Wartime_picture_of_a_Bletchley_Park_Bombe.jpg)*图灵甜点(炸弹机)*
+![Turing's Bombe](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Wartime_picture_of_a_Bletchley_Park_Bombe.jpg/440px-Wartime_picture_of_a_Bletchley_Park_Bombe.jpg)
+*图灵甜点(炸弹机)*
 
 </div>
