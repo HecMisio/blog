@@ -37,7 +37,7 @@ UTF-8 is a coding method based on Unicode (a character encoding scheme that can 
 
 <div class="table-container">
   <table>
-    <tr><th>Unicode Hexadecimal</th><th>UTF-8 Binary</th>
+    <tr><th>Unicode Hexadecimal</th><th>UTF-8 Binary</th></tr>
     <tr><td>0000 0000 - 0000 007F</td><td>0xxxxxxx</td></tr>
     <tr><td>0000 0080 - 0000 07FF</td><td>110xxxxx 10xxxxxx</td></tr>
     <tr><td>0000 0800 - 0000 FFFF</td><td>1110xxxx 10xxxxxx 10xxxxxx</td></tr>

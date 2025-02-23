@@ -37,7 +37,7 @@ UTF-8是基于Unicode（可以容纳世界上所有文字和符号的字符编�
 
 <div class="table-container">
   <table>
-    <tr><th>Unicode 十六进制</th><th>UTF-8 二进制</th>
+    <tr><th>Unicode 十六进制</th><th>UTF-8 二进制</th></tr>
     <tr><td>0000 0000 - 0000 007F</td><td>0xxxxxxx</td></tr>
     <tr><td>0000 0080 - 0000 07FF</td><td>110xxxxx 10xxxxxx</td></tr>
     <tr><td>0000 0800 - 0000 FFFF</td><td>1110xxxx 10xxxxxx 10xxxxxx</td></tr>
