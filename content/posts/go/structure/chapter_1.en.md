@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Byte、Rune And String"
+title: "Byte, Rune And String"
 description: "Analyze the differences between byte and rune in the Go language, as well as their relationship with string."
 date: 2025-02-13T10:58:33+08:00
-image: "/posts/go/images/chapter_1-cover.png"
+image: "/posts/go/structure/images/chapter_1-cover.png"
 tags: ["Go"]
 ---
 ## Byte

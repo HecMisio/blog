@@ -3,7 +3,7 @@ layout: post
 title: "Map 的实现原理"
 description: "深入分析Go语言 Map 数据结构的实现原理"
 date: 2025-02-19T10:39:14+08:00
-image: "/posts/go/images/chapter_2-cover.png"
+image: "/posts/go/structure/images/chapter_2-cover.jpg"
 tags: ["Go"]
 ---
 

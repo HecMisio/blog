@@ -3,7 +3,7 @@ layout: post
 title: "构建 Docker Image 的最佳姿势"
 description: "介绍 Docker Image 的内部结构，讲解构建 Docker Image 的最佳实践"
 date: 2025-02-23T15:25:35+08:00
-image: "/posts/docker/images/chapter_2-cover.png"
+image: "/posts/docker/images/chapter_2-cover.jpg"
 tags: ["Docker"]
 ---
 

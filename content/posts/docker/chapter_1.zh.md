@@ -3,7 +3,7 @@ layout: post
 title: "容器技术及Docker概述"
 description: "简单介绍容器技术和 Docker"
 date: 2025-02-20T17:13:06+08:00
-image: "/posts/docker/images/chapter_1-cover.png"
+image: "/posts/docker/images/chapter_1-cover.jpg"
 tags: ["Docker"]
 ---
 

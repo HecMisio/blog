@@ -3,8 +3,8 @@ layout: post
 title: "信息安全简史"
 description: "简单叙述信息安全的发展历史"
 date: 2025-01-28T15:03:39+08:00
-image: "/posts/information-security/images/chapter_1-cover.png"
-tags: ["Information Security"]
+image: "/posts/blockchain/information-security/images/chapter_1-cover.jpg"
+tags: ["Blockchain"]
 ---
 <i>信息安全（Information Security）</i>的概念可以追溯到古代，人们为了保护信息的机密性、完整性和可用性而采取的各种方法和技术。这些方法和技术主要依赖于手工操作、简单的数学工具和物理手段。而现代信息安全主要与计算机和通信技术的发展密切相关。
 

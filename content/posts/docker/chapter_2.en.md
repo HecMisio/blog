@@ -3,7 +3,7 @@ layout: post
 title: "The Best Way to Build an Image"
 description: "Introduce the internal structure of Docker Image and explain the best practices for building Docker Image."
 date: 2025-02-23T15:25:41+08:00
-image: "/posts/docker/images/chapter_2-cover.png"
+image: "/posts/docker/images/chapter_2-cover.jpg"
 tags: ["Docker"]
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Overview of Container Technology and Docker"
 description: "A brief introduction to container technology and Docker."
 date: 2025-02-20T17:13:06+08:00
-image: "/posts/docker/images/chapter_1-cover.png"
+image: "/posts/docker/images/chapter_1-cover.jpg"
 tags: ["Docker"]
 ---
 
