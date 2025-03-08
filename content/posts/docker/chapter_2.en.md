@@ -20,7 +20,7 @@ Before introducing the structure of Docker Image, let's first understand the fil
 We always say that Docker containers share the operating system kernel. In fact, what they share is the Bootfs, and the isolation between their environments is achieved through the Rootfs.
 
 <div class="content-image">
-<img src="/posts/docker/images/chapter_2-bootfs-and-rootfs.png" width="60%">
+<img src="/posts/docker/images/chapter_2-bootfs-and-rootfs.jpg" width="60%">
 <p>Bootfs and Rootfs</p>
 </div>
 
@@ -29,7 +29,7 @@ We always say that Docker containers share the operating system kernel. In fact,
 As mentioned above, building a Docker Image is the process of constructing a Rootfs. Docker uses <i>Union File System</i> to build Docker Images. <i>Union File System</i> is a layered file system that divides the file system into multiple layers, each of which can be managed independently but appears as a single file system externally. We can use the `docker history` command to view the layered structure of an image file.
 
 <div class="content-image">
-<img src="/posts/docker/images/chapter_2-image-history.png" width="100%">
+<img src="/posts/docker/images/chapter_2-image-history.jpg" width="100%">
 <p>Image History</p>
 </div>
 
@@ -48,7 +48,7 @@ Generally, there are two ways to build an image. One is to save a running contai
 The `docker commit` command generates a new image based on the modifications made to an existing container. It captures the current state of the container, including file system changes, but does not record the build process. Although this method is simple and convenient, it lacks reproducibility, makes it difficult to track specific changes, and is not easy to maintain. Therefore, it is more suitable for temporary or simple scenarios.
 
 <div class="content-image">
-<img src="/posts/docker/images/chapter_2-docker-commit.png" width="100%">
+<img src="/posts/docker/images/chapter_2-docker-commit.jpg" width="100%">
 <p>Docker Commit</p>
 </div>
 
@@ -57,7 +57,7 @@ The `docker commit` command generates a new image based on the modifications mad
 The `docker build` command builds an image by executing the instructions defined in the Dockerfile, providing a highly controllable automated process that supports complex build logic and optimization. This is also the recommended approach in production environments and projects that require long-term maintenance.
 
 <div class="content-image">
-<img src="/posts/docker/images/chapter_2-docker-build.png" width="100%">
+<img src="/posts/docker/images/chapter_2-docker-build.jpg" width="100%">
 <p>Docker Build</p>
 </div>
 

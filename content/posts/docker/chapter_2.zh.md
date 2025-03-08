@@ -20,7 +20,7 @@ tags: ["Docker"]
 我们总说 Docker 容器之间共享操作系统内核，其实共享的就是 Bootfs，彼此之间的环境隔离，隔离的就是 Rootfs。
 
 <div class="content-image">
-<img src="/posts/docker/images/chapter_2-bootfs-and-rootfs.png" width="60%">
+<img src="/posts/docker/images/chapter_2-bootfs-and-rootfs.jpg" width="60%">
 <p>Bootfs and Rootfs</p>
 </div>
 
@@ -29,7 +29,7 @@ tags: ["Docker"]
 由上文可知，构建一个 Docker Image，就是构建 Rootfs 的过程，Docker 采用联合文件系统（Union File System）的方式来构建 Docker Image。联合文件系统是一种分层文件系统，它将文件系统分为多层，每一层可以独立管理，但对外呈现为单一的文件系统。我们可以使用 `docker history` 命令来查看一个镜像文件的分层结构。
 
 <div class="content-image">
-<img src="/posts/docker/images/chapter_2-image-history.png" width="100%">
+<img src="/posts/docker/images/chapter_2-image-history.jpg" width="100%">
 <p>Image History</p>
 </div>
 
@@ -48,7 +48,7 @@ tags: ["Docker"]
 `docker commit` 基于现有容器的修改生成新的镜像。它捕获容器当前状态，包括文件系统更改，但不会记录构建过程。这种方式虽然简单便捷，但是缺乏可重复性，难以追踪具体改动，不易维护，因此更适用于临时或简单的场景。
 
 <div class="content-image">
-<img src="/posts/docker/images/chapter_2-docker-commit.png" width="100%">
+<img src="/posts/docker/images/chapter_2-docker-commit.jpg" width="100%">
 <p>Docker Commit</p>
 </div>
 
@@ -57,7 +57,7 @@ tags: ["Docker"]
 `docker build` 通过执行 Dockerfile 中定义的指令来构建镜像，提供高度可控的自动化流程，支持复杂的构建逻辑和优化，这也是在生产环境和需要长期维护的项目中比较推荐的做法。
 
 <div class="content-image">
-<img src="/posts/docker/images/chapter_2-docker-build.png" width="100%">
+<img src="/posts/docker/images/chapter_2-docker-build.jpg" width="100%">
 <p>Docker Build</p>
 </div>
 

@@ -28,7 +28,7 @@ In a nutshell, a container is a lightweight and portable virtualization technolo
 As the two core technologies of virtualization, containers and virtual machines are often compared. Both are used to integrate various IT components and isolate them from other parts of the host system to encapsulate the computing environment. The difference between the two lies in which components are isolated, which in turn affects the scale and portability of each approach.
 
 <div class="content-image">
-<img src="/posts/docker/images/chapter_1-vm-vs-container.png" width="80%">
+<img src="/posts/docker/images/chapter_1-vm-vs-container.jpg" width="80%">
 <p>Virtual Machine vs Container</p>
 </div>
 
@@ -68,7 +68,7 @@ Docker has the following core concepts
 * Registry：A repository for storing Docker images.
 
 <div class="content-image">
-<img src="/posts/docker/images/chapter_1-docker-architecture.png" width="80%">
+<img src="/posts/docker/images/chapter_1-docker-architecture.jpg" width="80%">
 <p>Docker Architecture</p>
 </div>
 

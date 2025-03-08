@@ -26,7 +26,7 @@ tags: ["Docker"]
 作为虚拟化技术的两大核心，容器和虚拟机经常被拿来对比，它们都被用于整合各种IT组件并与主机系统的其他部分隔离开来，以封装计算环境，二者的区别在于隔离了哪些组件，这反过来又影响了每种方式的规模和可移植性。
 
 <div class="content-image">
-<img src="/posts/docker/images/chapter_1-vm-vs-container.png" width="80%">
+<img src="/posts/docker/images/chapter_1-vm-vs-container.jpg" width="80%">
 <p>Virtual Machine vs Container</p>
 </div>
 
@@ -62,7 +62,7 @@ Docker 具有以下核心概念
 * Registry：存放 Docker Image 的仓库。
 
 <div class="content-image">
-<img src="/posts/docker/images/chapter_1-docker-architecture.png" width="80%">
+<img src="/posts/docker/images/chapter_1-docker-architecture.jpg" width="80%">
 <p>Docker Architecture</p>
 </div>
 
