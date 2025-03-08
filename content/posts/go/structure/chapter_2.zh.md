@@ -18,7 +18,7 @@ tags: ["Go"]
 哈希函数是一种将任意长度的输入映射为固定长度输出的函数。理想状态下，哈希函数应该将不同的输入映射为不同的输出，这要求哈希函数的输出范围大于输入范围，但这是不可能的，不同输入映射为相同输出的情况，就被称为哈希冲突。比较实际的方式是让哈希函数的结果尽量地均匀分布，以尽可能地减少哈希冲突的发生，再结合工程手段解决哈希冲突问题。因此，要想实现性能优异的哈希表，哈希函数的选择是至关重要的。
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash.png" width="50%">
+<img src="/posts/go/structure/images/chapter_2-hash.jpg" width="50%">
 <p>Hash Function</p>
 </div>
 
@@ -45,7 +45,7 @@ tags: ["Go"]
 计算出键的初始位置后，若初始位置已存在键值对且与插入键不相同时，则继续通过探测方法来寻找下一个索引不为空的位置，相同则更新值。
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-insert.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-insert.jpg" width="60%">
 <p>Insert</p>
 </div>
 
@@ -72,14 +72,14 @@ tags: ["Go"]
 当进行查询时，使用相同的方法计算键的初始位置，比较初始位置的键与查询键是否相同，不同则继续使用探测方法计算，直到找到要查询的键，或计算出索引为空的位置，这说明查询的键不存在。
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-search.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-search.jpg" width="60%">
 <p>Search</p>
 </div>
 
 当进行删除时，开放寻址法无法真正删除元素，而是将要删除的元素标记为已删除，因为一旦真正删除了某个元素，就可能会导致探测方法被中断，使得寻址失效。
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-delete.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-delete.jpg" width="60%">
 <p>Delete</p>
 </div>
 
@@ -98,21 +98,21 @@ tags: ["Go"]
 为键值对选择好桶后，遍历桶中的键值对，若存在相同键则更新值，若不存在相同键，则在桶中的链表后追加键值对。
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-bucket-insert.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-bucket-insert.jpg" width="60%">
 <p>Insert</p>
 </div>
 
 当进行查询时，使用相同的方法计算查询键对应的桶，再遍历桶中的链表，查看被查询的键是否存在。
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-bucket-search.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-bucket-search.jpg" width="60%">
 <p>Search</p>
 </div>
 
 当进行删除时，使用相同的方法计算删除键对应的桶，再遍历桶中的链表，进行链表元素的删除，无需像开放寻址法一样使用标记的方式。
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-bucket-delete.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-bucket-delete.jpg" width="60%">
 <p>Delete</p>
 </div>
 
@@ -127,7 +127,7 @@ tags: ["Go"]
 <p>
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-double.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-double.jpg" width="60%">
 <p>Insert</p>
 </div>
 
@@ -168,7 +168,7 @@ type bmap struct {
 ```
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-go-map.png" width="80%">
+<img src="/posts/go/structure/images/chapter_2-hash-go-map.jpg" width="80%">
 <p>Go Map</p>
 </div>
 

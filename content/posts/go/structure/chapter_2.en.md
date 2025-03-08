@@ -18,7 +18,7 @@ Hash tables offer O(1) read and write performance and provide a mapping between 
 A hash function is a function that maps inputs of arbitrary length to outputs of a fixed length. Ideally, a hash function should map different inputs to different outputs, which requires the output range of the hash function to be larger than the input range. However, this is impossible, and the situation where different inputs are mapped to the same output is called a hash collision. A more practical approach is to make the results of the hash function as evenly distributed as possible to minimize the occurrence of hash collisions, and then use engineering methods to solve the hash collision problem. Therefore, the selection of a hash function is crucial for achieving a high-performance hash table.
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash.png" width="50%">
+<img src="/posts/go/structure/images/chapter_2-hash.jpg" width="50%">
 <p>Hash Function</p>
 </div>
 
@@ -45,7 +45,7 @@ Inserting data into a hash table, when we do so through
 After calculating the position of the key, if the position already has a key-value pair and it is not the same as the key being inserted, then continue to search for the next empty index position through the probing method; if they are the same, update the value.
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-insert.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-insert.jpg" width="60%">
 <p>Insert</p>
 </div>
 
@@ -72,14 +72,14 @@ Commonly used probing methods include
 When performing a query, the same method is used to calculate the position of the key. The key at the position is compared with the query key. If they are not the same, the probing method is continued to calculate until the key to be queried is found or an empty position in the index is calculated, which indicates that the queried key does not exist.
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-search.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-search.jpg" width="60%">
 <p>Search</p>
 </div>
 
 When performing deletion, <i>Open Addressing</i> cannot truly delete an element but marks the element to be deleted as deleted. This is because once an element is truly deleted, it may cause the probing method to be interrupted, resulting in the failure of addressing.
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-delete.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-delete.jpg" width="60%">
 <p>Delete</p>
 </div>
 
@@ -98,21 +98,21 @@ Inserting data into a hash table, when we do so through
 After choosing the appropriate bucket for the key-value pair, traverse the key-value pairs in the bucket. If a key is found to be the same, update the value. If no identical key is found, append the key-value pair to the end of the linked list in the bucket.
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-bucket-insert.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-bucket-insert.jpg" width="60%">
 <p>Insert</p>
 </div>
 
 When performing a query, the same method is used to calculate the bucket corresponding to the query key, and then the linked list in the bucket is traversed to check if the queried key exists.
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-bucket-search.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-bucket-search.jpg" width="60%">
 <p>Search</p>
 </div>
 
 When performing deletion, the same method is used to calculate the bucket corresponding to the deletion key, and then the linked list in the bucket is traversed to delete the linked list element. There is no need to use the marking method as in <i>Open Addressing</i>.
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-bucket-delete.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-bucket-delete.jpg" width="60%">
 <p>Delete</p>
 </div>
 
@@ -127,7 +127,7 @@ The core idea of <i>Rehashing</i> is that when a hash collision occurs, another 
 <p>
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-double.png" width="60%">
+<img src="/posts/go/structure/images/chapter_2-hash-double.jpg" width="60%">
 <p>Insert</p>
 </div>
 
@@ -168,7 +168,7 @@ type bmap struct {
 ```
 
 <div class="content-image">
-<img src="/posts/go/structure/images/chapter_2-hash-go-map.png" width="80%">
+<img src="/posts/go/structure/images/chapter_2-hash-go-map.jpg" width="80%">
 <p>Go Map</p>
 </div>
 
