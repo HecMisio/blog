@@ -100,7 +100,7 @@ Digital certificates are used to prove the source information of public keys. Th
 <p>Digital Certificate</p>
 </div>
 
-When others obtain this digital certificate, they verify its credibility through the public key of the certification center.
+When others obtain this digital certificate, they verify its credibility through the public key of the certification center. After the verification is successful, the source of the public key is confirmed. In this way, the risk of the public key being replaced is avoided.
 
 <div class="content-image">
 <img src="/posts/blockchain/images/chapter_1-certification-authority.jpg" width="50%">

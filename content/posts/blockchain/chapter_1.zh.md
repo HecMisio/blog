@@ -100,7 +100,7 @@ tags: ["Blockchain"]
 <p>Digital Certificate</p>
 </div>
 
-当他人拿到该数字证书后，通过认证中心的公钥来验证数字证书的可信性。
+当他人拿到该数字证书后，通过认证中心的公钥来验证数字证书的可信性，验证通过后，确认公钥的来源，这样就规避了公钥被替换的风险。
 
 <div class="content-image">
 <img src="/posts/blockchain/images/chapter_1-certification-authority.jpg" width="50%">
