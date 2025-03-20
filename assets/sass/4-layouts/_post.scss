@@ -61,6 +61,7 @@
 
 .content-image {
   text-align: center;
+
   p {
     margin-top: 8px;
     font-size: 14px;
@@ -124,7 +125,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  
+
   .post__tag {
     padding: 12px 16px;
     margin: 4px 8px 4px 0;
@@ -137,7 +138,7 @@
     color: var(--heading-font-color);
     transition: none;
     background-color: var(--background-alt-color);
-  
+
     &:last-child {
       margin-right: 0;
     }
@@ -228,7 +229,50 @@
   }
 }
 
-.post,
+.post {
+  display: flex;
+  max-width: $container-base-width;
+  margin: 0 auto;
+  padding: 20px;
+  color: var(--text-color);
+
+  a {
+    font-weight: 500;
+    border-bottom: 1px solid var(--border-color);
+
+    &:hover {
+      color: var(--link-color);
+      border-bottom-color: var(--link-color-hover);
+    }
+  }
+
+  img,
+  .js-reframe {
+    border-radius: 8px;
+    overflow: hidden;
+
+    &.lightense-open {
+      border-radius: 0;
+    }
+  }
+
+  img[src$='#wide'] {
+    display: block;
+    width: 100vw;
+    max-width: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .button {
+    border: none;
+    text-decoration: none;
+  }
+}
+
 .page {
   max-width: 760px;
   margin: 0 auto 60px;
@@ -244,7 +288,8 @@
     }
   }
 
-  img, .js-reframe {
+  img,
+  .js-reframe {
     border-radius: 8px;
     overflow: hidden;
 
@@ -324,7 +369,7 @@
   }
 
   @media only screen and (max-width: $mobile) {
-     margin-top: 60px;
+    margin-top: 60px;
 
     .row .col:last-child {
       margin-bottom: 0;
@@ -366,9 +411,9 @@
   }
 
   @media only screen and (max-width: $mobile) {
-     &.is-open {
-       margin: 0 auto;
-     }
+    &.is-open {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -387,7 +432,7 @@
     margin-bottom: 0;
     color: var(--text-alt-color);
   }
-  
+
   @media only screen and (max-width: $mobile) {
     .error__title {
       font-size: 68px;
@@ -400,7 +445,7 @@
   margin-top: 80px;
 
   @media only screen and (max-width: $mobile) {
-     margin-top: 60px;
+    margin-top: 60px;
 
     .row .col:last-child {
       margin-bottom: 0;
@@ -408,17 +453,13 @@
   }
 }
 
-.container__animate {
-  display: flex;
-  position: relative;
-  max-width: $container-base-width;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.post__amimate {
+.post__content {
   flex: 1;
   padding: 20px;
+
+  @media only screen and (max-width: $mobile) {
+    padding: 20px;
+  }
 }
 
 .post__toc {
