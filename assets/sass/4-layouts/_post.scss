@@ -411,8 +411,8 @@
 .container__animate {
   display: flex;
   position: relative;
-  max-width: 75%;
-  margin-left: 15%;
+  max-width: $container-base-width;
+  margin: 0 auto;
   padding: 20px;
 }
 
