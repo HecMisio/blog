@@ -3,7 +3,7 @@ layout: post
 title: "Byte、Rune 和 String"
 description: "分析Go语言中byte、rune之间的区别，以及与string之间的关系"
 date: 2025-02-13T10:58:33+08:00
-image: "/posts/go/structure/images/chapter_1-cover.jpg"
+image: "/posts/go/images/chapter_1-cover.jpg"
 tags: ["Go"]
 ---
 ## Byte
