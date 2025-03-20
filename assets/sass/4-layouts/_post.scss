@@ -456,10 +456,6 @@
 .post__content {
   flex: 1;
   padding: 20px;
-
-  @media only screen and (max-width: $mobile) {
-    padding: 20px;
-  }
 }
 
 .post__toc {
@@ -472,13 +468,8 @@
   padding-left: 20px;
   border-left: 1px solid #ddd;
 
-  @media only screen and (max-width: $mobile) {
-    width: 100%;
-    position: static;
-    border-left: none;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
-    padding-left: 0;
+  @media only screen and (max-width: $tablet) {
+    display: none;
   }
 }
 
