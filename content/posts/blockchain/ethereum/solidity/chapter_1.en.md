@@ -7,7 +7,6 @@ image: "/posts/blockchain/ethereum/solidity/images/chapter_1-cover.jpg"
 tags: ["Blockchain", "Solidity"]
 ---
 
-
 ## Data Types
 
 Solidity offers a variety of data types to meet the different needs of smart contract development. The following are some common data types:
@@ -319,9 +318,8 @@ In addition, state variables can also be marked as immutable by the `immutable` 
 ```Solidity
 uint256 immutable deploymentTime;
 
-
 constructor() {
-deploymentTime = block.timestamp;
+    deploymentTime = block.timestamp;
 }
 ```
 
