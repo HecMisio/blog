@@ -62,10 +62,9 @@ dynamicArray.push(2);
 dynamicArray.pop();
 ```
 
-```markdown
 **mapping**
 
-Mapping is a hash table in Solidity that supports read, write, and delete operations. However, the delete operation does not truly remove the key-value pair but resets the key-value to the default value using the delete function. In fact, the delete function also supports resetting other data types; for more details, please refer to the function section. Mapping does not support checking whether a key-value exists. Generally, it is determined by checking whether the value is the default value.
+Mapping is a hash table in Solidity that supports read, write, and delete operations. However, the delete operation does not truly remove the key-value pair but resets the key-value to the default value using the delete function. In fact, the delete function also supports resetting other data types. Mapping does not support checking whether a key-value exists. Generally, it is determined by checking whether the value is the default value.
 
 ```solidity
 mapping(address => uint) public balances;

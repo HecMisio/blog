@@ -60,7 +60,7 @@ dynamicArray.pop();
 
 **mapping**
 
-mapping 是 Solidity 的哈希表，支持读写和删除操作。不过删除操作不是真的删除键值对，而是使用 delete 函数将键值重置为默认值，事实上 delete 函数还支持对其他数据类型进行重置，具体可见函数章节。mapping 不支持检查键值是否存在，一般通过检查值是否为默认值来判断。
+mapping 是 Solidity 的哈希表，支持读写和删除操作。不过删除操作不是真的删除键值对，而是使用 delete 函数将键值重置为默认值，事实上 delete 函数还支持对其他数据类型进行重置。mapping 不支持检查键值是否存在，一般通过检查值是否为默认值来判断。
 
 ```Solidity
 mapping(address => uint) public balances;
