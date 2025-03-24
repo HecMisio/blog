@@ -299,6 +299,25 @@ EVM 本身共有 5 种存储区，同时支持将合约事件永久记录到区�
 </tr>
 </table>
 
+### 常量
+
+Solidity 中的状态变量可以被 constant 修饰符标记为常量，被标记为常量的状态变量必须立即赋值。常量不会被存储到 Storage 存储区中，而是被编译器直接编译到合约的字节码中，也可以说存储在 Code 区中。
+
+```Solidity
+uint256 constant MAX_SUPPLY = 10000;
+address constant OWNER = 0x1234567890abcdef1234567890abcdef12345678;
+```
+
+另外状态变量还可以被 immutable 修饰符标记为不可变量，与常量不同的是，不可变量不需要立即赋值，它可以在合约部署时通过构造函数进行初始化，部署之后不可更改。不可变量存储在合约的 Storage 存储区中，但仍然是只读的。
+
+```Solidity
+uint256 immutable deploymentTime;
+
+constructor() {
+    deploymentTime = block.timestamp;
+}
+```
+
 ## 函数
 
 Solidity 中函数是智能合约的核心，用于定义合约的行为和逻辑。函数可以有多个传参，对于引用类型（string，bytes，array，mapping）和 struct 类型的参数必须指定存储模式（calldata，memory），同时函数也可以有多个返回值，返回值如果时引用类型或 struct 类型，必须指定为 memory，因为引用类型和结构体作为返回值只能被存储在内存中。Solidity 函数支持重载，多个同名函数，只要参数不同，即函数签名不同，就可以重复定义。

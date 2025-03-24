@@ -305,6 +305,26 @@ The EVM itself has five types of storage areas and also supports permanently rec
 </tr>
 </table>
 
+### Constant
+
+In Solidity, state variables can be marked as constants with the `constant` modifier. State variables marked as constants must be assigned a value immediately. Constants are not stored in the Storage area but are directly compiled by the compiler into the contract's bytecode, or it can be said that they are stored in the Code area.
+
+```Solidity
+uint256 constant MAX_SUPPLY = 10000;
+address constant OWNER = 0x1234567890abcdef1234567890abcdef12345678;
+```
+
+In addition, state variables can also be marked as immutable by the `immutable` modifier. Unlike constants, immutable variables do not need to be assigned immediately; they can be initialized through the constructor when the contract is deployed and cannot be changed after deployment. Immutable variables are stored in the contract's Storage storage area but remain read-only.
+
+```Solidity
+uint256 immutable deploymentTime;
+
+
+constructor() {
+deploymentTime = block.timestamp;
+}
+```
+
 ## Function
 
 Functions are the core of smart contracts in Solidity, used to define the behavior and logic of the contract. Functions can have multiple parameters. For reference types (`string`, `bytes`, `array`, `mapping`) and `struct` types of parameters, the storage mode (`calldata`, `memory`) must be specified. At the same time, functions can also have multiple return values. If the return value is a reference type or `struct` type, it must be specified as `memory`, because reference types and structs as return values can only be stored in memory. Solidity functions support overloading. Multiple functions with the same name but different parameters can coexist.
