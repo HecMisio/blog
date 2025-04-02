@@ -1,6 +1,6 @@
 ---
 layout: post
-Title: "Chainlink: Unlocking the Infinite Possibilities of Blockchain"
+Title: "Exploring Chainlink"
 Description: "Explore how Chainlink expands the functional boundaries of smart contracts through CCIP, data feeds, data streams, random number generation, and automation services."
 date: 2025-03-26T10:24:07+08:00
 image: "/posts/blockchain/ethereum/solidity/images/chapter_2-cover.jpg"

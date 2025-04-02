@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chainlink：解锁区块链的无限可能"
+title: "探索 Chainlink"
 description: "探讨 Chainlink 如何通过CCIP、数据喂价、数据流、随机数和自动化服务扩展智能合约的功能边界"
 date: 2025-03-26T10:24:07+08:00
 image: "/posts/blockchain/ethereum/solidity/images/chapter_2-cover.jpg"

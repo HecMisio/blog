@@ -137,37 +137,39 @@ document.addEventListener("DOMContentLoaded", function () {
   /* =======================
   // Post toc
   ======================= */
-  const headings = Array.from(postContent.querySelectorAll("h1, h2, h3, h4"))
-    .map(heading => ({
-      level: parseInt(heading.tagName.substring(1)),
-      text: heading.innerText,
-      id: heading.id || heading.innerText.toLowerCase().replace(/[^\w]+/g, '-')
-    }));
+  if (window.location.pathname.includes('/posts/') && postContent && postToc) {
+    const headings = Array.from(postContent.querySelectorAll("h1, h2, h3, h4"))
+      .map(heading => ({
+        level: parseInt(heading.tagName.substring(1)),
+        text: heading.innerText,
+        id: heading.id || heading.innerText.toLowerCase().replace(/[^\w]+/g, '-')
+      }));
 
-  const tocHTML = headings
-    .map(heading => {
-      const indent = (heading.level - 1) * 10;
-      return `<li style="margin-left: ${indent}px;">
-                    <a href="#${heading.id}">${heading.text}</a>
-                  </li>`;
-    })
-    .join('');
+    const tocHTML = headings
+      .map(heading => {
+        const indent = (heading.level - 1) * 10;
+        return `<li style="margin-left: ${indent}px;">
+                      <a href="#${heading.id}">${heading.text}</a>
+                    </li>`;
+      })
+      .join('');
 
-  postToc.innerHTML = `<ul>${tocHTML}</ul>`;
+    postToc.innerHTML = `<ul>${tocHTML}</ul>`;
 
-  document.querySelectorAll(".post__toc a").forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
+    document.querySelectorAll(".post__toc a").forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
     });
-  });
+  }
 
   /* =================================
   // Smooth scroll to the tags page
