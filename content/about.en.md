@@ -1,34 +1,47 @@
 ---
-title: About
+Title: About Me 
 permalink: /about/
-image: 'https://via.placeholder.com/1200x800'
+image: 'images/about.jpg'
 ---
 
-Leverage agile frameworks to provide a robust Hugo Sousa synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+Welcome to my personal blog! Here I share the little moments of my life, my learning experiences and my hobbies. I hope to communicate and grow with more like-minded friends through this platform.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+### About Me
 
-Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services. Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources.
+I am an enthusiast for exploration and learning, and I enjoy documenting the little moments and thoughts in life. Whether it's about technology, travel, reading, or the small discoveries in daily life, I hope to share them with everyone through words, pictures and videos.
 
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="https://via.placeholder.com/800x600">
-    <img src="https://via.placeholder.com/800x600">
-    <img src="https://via.placeholder.com/800x600">
-  </div>
-  <em>Gallery / <a href="https://via.placeholder.com/1200x800" target="_blank">Unsplash</a></em>
-</div>
+The Original Intention of the Blog
 
-Completely synergize resource taxing relationships via premier niche markets. Cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+- **Record**: Document my growth journey and the little moments in life.
+- **Share**: Share my knowledge, experiences and interests, hoping to inspire others.
+- **Communicate**: Exchange ideas with more interesting people and broaden my horizons.
 
-Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
+### My Interests
 
-### Synergistically evolve
+- **Technology**: I enjoy researching new technologies, writing code, and solving problems.
+- **Travel**: I am passionate about exploring different places and experiencing their cultures and landscapes.
+- **Reading**: I love reading all kinds of books to gain knowledge and inspiration.
+- **Photography**: I capture the beautiful moments in life through my lens.
 
-Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures.
+### My Technology Stack
 
-<p><iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
+In terms of technology, I possess the following skills and am constantly learning and exploring new fields:
 
-Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. Holistically foster superior methodologies without market-driven best practices.
+- **Languages**: Go, Solidity
+- **Architecture**: Microservice
+- **Middleware**: MySQL, Redis, RabbitMQ
+- **Cloud Native**: Docker
 
-Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-business applications through revolutionary catalysts for change. Seamlessly underwhelm optimal testing procedures whereas bricks-and-clicks processes.
+#### Future Exploration Directions
+
+- **Blockchain Technology**: Explore the underlying principles of blockchain and its potential in decentralized applications.
+- **Distributed Systems**: Study the design and implementation of distributed architectures to enhance the scalability and reliability of systems.
+- **Artificial Intelligence and Machine Learning**: Deeply study machine learning algorithms and explore their applications in practical projects.
+
+Contact Me
+
+If you are interested in my content or have any thoughts you'd like to share with me, please feel free to contact me through the following methods:
+
+- **Email**: <misiohec@gmail.com>
+
+Thank you for your visit. I hope you find valuable content here!

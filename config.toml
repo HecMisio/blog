@@ -49,7 +49,7 @@ title = "HecMisio's Blog"
   # Author Settings
   [params.author]
     author__name = "HecMisio"
-    author__bio = "Here I publish my thoughts on IT, economics, psychology, life and so on."
+    author__bio = "Welcome to my personal blog! Here I share the little things in my life, my learning experiences and my hobbies."
     author__avatar = "/images/avatar.jpg"
 
   # Example of adding a new link to the author section and footer:
@@ -66,7 +66,7 @@ title = "HecMisio's Blog"
   [params.hero]
     hero__title = "Hey, I’m HecMisio"
     hero__description = "A software engineer(usually be a Gopher)."
-    hero__context = "Here I publish my thoughts on IT, economics, psychology, life and so on."
+    hero__context = "This is where I share the little moments of my life, my learning experiences and my hobbies, whether it's about technology, travel, reading or the small discoveries in daily life."
     hero__image = "/images/hero.jpg"
 
   # Newsletter
@@ -200,9 +200,9 @@ defaultContentLanguage = 'en'
     [languages.zh.params.hero]
       hero__title = "你好, 我是 HecMisio"
       hero__description = "一位软件开发工程师（通常是Gopher）"
-      hero__context = "这里是我的博客，分享有关信息技术，经济学，心理学，生活......的想法"
+      hero__context = "这里是我分享生活点滴、学习心得和兴趣爱好的地方，无论是技术、旅行、阅读，还是日常生活中的小发现"
       hero__image = "/images/hero.jpg"
     [languages.zh.params.author]
       author__name = "HecMisio"
-      author__bio = "分享有关信息技术，经济学，心理学，生活......的想法"
+      author__bio = "欢迎来到我的个人博客！这里是我分享生活点滴、学习心得和兴趣爱好的地方"
       author__avatar = "/images/avatar.jpg"
